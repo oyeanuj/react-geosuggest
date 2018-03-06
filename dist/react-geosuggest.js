@@ -2791,7 +2791,7 @@ var SuggestItem = function (_React$Component) {
       var content = suggest.label;
 
       if (this.props.renderSuggestItem) {
-        content = this.props.renderSuggestItem(suggest);
+        content = this.props.renderSuggestItem(suggest, this.props.userInput);
       } else if (this.props.isHighlightMatch) {
         content = this.formatMatchedText(this.props.userInput, suggest);
       }
